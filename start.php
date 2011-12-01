@@ -12,13 +12,22 @@
 	}
 	
 	function pages_tree_page_handler($page){
+		$result = false;
+		
 		switch($page[0]){
 			case "reorder":
+				$result = true;
+				
 				include(dirname(__FILE__) . "/procedures/reorder.php");
 				break;
-			default:
-				forward();
+			case "load":
+				$result = true;
+				
+				include(dirname(__FILE__) . "/procedures/load.php");
+				break;
 		}
+		
+		return $result;
 	}
 	
 	/**
@@ -31,9 +40,14 @@
 	 */
 	function pages_tree_write_permission_check($hook, $entity_type, $returnvalue, $params) {
 		global $PAGES_TREE_REORDERING;
-		if($params['entity']->getSubtype() == 'page' || $params['entity']->getSubtype() == 'page_top'){
-			if ($PAGES_TREE_REORDERING == true) {
-				return true;
+		
+		if($PAGES_TREE_REORDERING === true){
+			if(!empty($params["entity"]) && $params["entity"] instanceof ElggObject){
+				$entity = $params["entity"];
+				
+				if(($entity->getSubtype() == "page") || ($entity->getSubtype() == "page_top")){
+					return true;
+				}
 			}
 		}		
 	}

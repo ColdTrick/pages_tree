@@ -14,9 +14,6 @@
 	color:#0054A7;
 }
 
-#pages_tree_sidebar_tree {
-	display: none;
-}
 #pages_tree_sidebar_tree.tree{
 	display: block;
 }

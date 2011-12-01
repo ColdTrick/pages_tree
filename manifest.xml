@@ -28,6 +28,9 @@ Credits
 ======================
 Version History
 ======================
+x.x:
+	- changed: loading of pages navigation menu now ajax based (performance increase on heavy trees)
+
 1.0.1 (2011-05-18):
 	- fixed: unable to view pages history
 
