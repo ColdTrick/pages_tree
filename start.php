@@ -38,11 +38,9 @@
 		}		
 	}
 	
-	
 	// register default elgg events
 	register_elgg_event_handler("init", "system", "pages_tree_init");
 	
 	// write permission plugin hooks
 	register_plugin_hook('permissions_check', 'object', 'pages_tree_write_permission_check');
 	
-?>

@@ -1,6 +1,12 @@
 <?php 
 
 	function pages_tree_display_pages($page){
+		
+		static $can_edit;
+		if(!isset($can_edit)){
+			$can_edit = $page->canWriteToContainer();
+		}
+		
 		$result = "";
 		$options = array(
 				"type" => "object",
@@ -29,8 +35,6 @@
 			$result .= "<ul>";
 			foreach($ordered_children as $child_page){
 				$result .= "<li";
-				 
-				$can_edit = $child_page->canWriteToContainer();
 				
 				if(!$can_edit){
 					$result .= " rel='non_edit'";
@@ -44,5 +48,3 @@
 		
 		return $result;
 	}
-
-?>
