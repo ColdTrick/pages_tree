@@ -1,5 +1,5 @@
 = Version History =
-x.x:
+1.0.2 (2011-12-05):
 
 - changed: loading of pages navigation menu now ajax based (performance increase on heavy trees)
 - changed: moved changelog to CHANGES.txt in preperation for Elgg 1.8
