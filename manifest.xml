@@ -25,16 +25,5 @@ Credits
 ======================
 - Thanks to jsTree (http://jstree.com) for the wonderful jQuery tree plugin
 
-======================
-Version History
-======================
-x.x:
-	- changed: loading of pages navigation menu now ajax based (performance increase on heavy trees)
-
-1.0.1 (2011-05-18):
-	- fixed: unable to view pages history
-
-1.0 (2011-03-25):
-	- initial release
 
 -->
