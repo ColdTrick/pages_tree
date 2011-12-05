@@ -3,6 +3,7 @@ x.x:
 
 - changed: loading of pages navigation menu now ajax based (performance increase on heavy trees)
 - changed: moved changelog to CHANGES.txt in preperation for Elgg 1.8
+- changed: moved features/credits to README.txt in preperation for Elgg 1.8
 
 1.0.1 (2011-05-18):
 

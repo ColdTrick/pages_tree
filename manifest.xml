@@ -8,22 +8,3 @@
 	<field key="licence" value="GNU Public License version 2" />
 	<field key="elgg_version" value="2010040201" />
 </plugin_manifest>
-<!--
-
-Should be place below pages plugin in plugin order.
-
-======================
-Features
-======================
-- Completely (forward and backward) compatible with the Pages plugin
-- Order pages
-- Drag and drop pages to rearange structure
-- Take over of default pages navigation in sidebar
-
-======================
-Credits
-======================
-- Thanks to jsTree (http://jstree.com) for the wonderful jQuery tree plugin
-
-
--->
