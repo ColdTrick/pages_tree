@@ -1,6 +1,7 @@
 = Version History =
 x.x:
 
+- changed: creating subpages or removing page menu items now depend on canEdit() 
 - changed: moved page_handler to its own lib file
 - changed: moved hook to its own lib file
 
