@@ -1,8 +1,4 @@
 = Version History =
-x.x:
-
-- changed: moved page_handler to own lib file
-
 1.0.2 (2011-12-05):
 
 - changed: loading of pages navigation menu now ajax based (performance increase on heavy trees)
