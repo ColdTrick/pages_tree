@@ -1,6 +1,7 @@
 <?php 
 
 	require_once(dirname(__FILE__) . "/lib/functions.php");
+	require_once(dirname(__FILE__) . "/lib/page_handlers.php");
 	
 	function pages_tree_init(){
 		
@@ -11,24 +12,7 @@
 		register_page_handler("pages_tree", "pages_tree_page_handler");
 	}
 	
-	function pages_tree_page_handler($page){
-		$result = false;
-		
-		switch($page[0]){
-			case "reorder":
-				$result = true;
-				
-				include(dirname(__FILE__) . "/procedures/reorder.php");
-				break;
-			case "load":
-				$result = true;
-				
-				include(dirname(__FILE__) . "/procedures/load.php");
-				break;
-		}
-		
-		return $result;
-	}
+	
 	
 	/**
 	 * Extend pages permissions when reordering pages
