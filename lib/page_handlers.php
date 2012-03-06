@@ -7,12 +7,12 @@
 			case "reorder":
 				$result = true;
 	
-				include(dirname(__FILE__) . "/procedures/reorder.php");
+				include(dirname(dirname(__FILE__)) . "/procedures/reorder.php");
 				break;
 			case "load":
 				$result = true;
 	
-				include(dirname(__FILE__) . "/procedures/load.php");
+				include(dirname(dirname(__FILE__)) . "/procedures/load.php");
 				break;
 		}
 	
