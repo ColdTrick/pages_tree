@@ -2,6 +2,7 @@
 x.x:
 
 - changed: moved page_handler to its own lib file
+- changed: moved hook to its own lib file
 
 1.0.2 (2011-12-05):
 
